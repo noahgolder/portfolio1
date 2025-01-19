@@ -1,0 +1,233 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 2em;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+    margin-bottom: 0.5em;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  p, ul, li {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+  }
+  
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  /* Header Styling */
+  header h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.5em;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  header a {
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section Styling (Professional Summary, Work Experience, Education) */
+  section {
+    background-color: #fff;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  section header h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+  }
+  
+  section article {
+    margin-bottom: 2em;
+  }
+  
+  section article header h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.5em;
+  }
+  
+  section article time {
+    font-style: italic;
+    color: #7f8c8d;
+  }
+  
+  section article ul {
+    margin-left: 20px;
+  }
+  
+  section article li {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+  }
+  
+  
+  /* Resume Skills Section */
+  section#skills {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  section#skills header h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+  }
+  
+  section#skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5em;
+  }
+  
+  section#skills li {
+    background-color: #f4f4f4;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  section#skills li h4 {
+    font-size: 1.4em;
+    color: #2c3e50;
+  }
+  
+  /* Projects Section Styling */
+  section#projects {
+    background-color: #fff;
+    padding: 2em;
+    margin-top: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  section#projects header h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+  }
+  
+  section#projects article {
+    margin-bottom: 2em;
+  }
+  
+  section#projects article header h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.5em;
+  }
+  
+  section#projects article time {
+    font-style: italic;
+    color: #7f8c8d;
+  }
+  
+  section#projects article ul {
+    margin-left: 20px;
+  }
+  
+  section#projects article li {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+  }
+  
+  /* Footer / Contact Section */
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1.2em;
+    color: white;
+  }
+  
+  /* Responsive Design for Resume */
+  @media (max-width: 768px) {
+    body {
+      padding: 1em;
+    }
+  
+    header h1 {
+      font-size: 2.2em;
+    }
+  
+    section {
+      padding: 1.5em;
+    }
+  
+    section header h2 {
+      font-size: 1.6em;
+    }
+  
+    section article header h3 {
+      font-size: 1.4em;
+    }
+  
+    section#skills ul {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 1.2em;
+    }
+  
+    nav ul li {
+      font-size: 1.1em;
+    }
+  }
+  

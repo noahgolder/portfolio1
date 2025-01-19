@@ -3,4 +3,127 @@ body {
          and use the OS’s UI font as the website font
        */
     font: 100%/1.5 system-ui;
+    max-width: 100ch;    /* Limit max-width to 100 characters */
+    margin-inline: auto; /* Center the content horizontally */
+    padding: 1rem;       /* Add padding around the content */
+    font-family: Arial, sans-serif; /* Example font family */
+    line-height: 1.5; 
   }
+
+ul, li {
+  display: contents
+}
+
+
+nav {
+  display: flex;  /* Enables Flexbox */
+  justify-content: space-between;  /* Distributes items with space between */
+  align-items: center;  /* Vertically centers the items */
+  margin-bottom: 1em;  /* Adds space between the nav and the content below */
+  border-bottom: 1px solid oklch(80% 3% 200);  /* Subtle gray border at the bottom */
+}
+
+nav a {
+  flex: 1;  /* Each link takes up equal space */
+  text-decoration: none;  /* Removes the underline */
+  color: inherit;  /* Inherits the color from the parent */
+  text-align: center;  /* Centers the text */
+  padding: 0.5em;  /* Adds padding */
+  display: block;  /* Makes the <a> fill the <li> */
+}
+
+nav .current {
+  border-bottom: 0.4em solid oklch(80% 3% 200);  /* Adds a thick border for the current page */
+  padding-bottom: 0.3em;  /* Reduces bottom padding for the border */
+}
+
+/* Step 2.4: Accent color and hover styles */
+:root {
+  --color-accent: oklch(65% 50% 0);  /* Custom accent color */
+}
+
+html {
+  accent-color: var(--color-accent);  /* Makes accent color available globally */
+}
+
+nav a:hover {
+  border-bottom: 0.4em solid var(--color-accent);  /* Hover effect with the accent color */
+}
+
+/* Step 3.1: Integrate Typography */
+form input,
+form textarea,
+form button {
+  font: inherit; /* Inherit the font from the parent container */
+}
+
+/* Step 3.2: Top-Down Layout */
+form {
+  display: grid; /* Enable grid layout */
+  grid-template-columns: auto 1fr; /* Label takes up as much space as content, input takes remaining space */
+  gap: 1em; /* Adds space between grid items */
+}
+
+form label {
+  display: block; /* Labels are block elements */
+  grid-column: 1; /* Labels go in the first column */
+  margin-block: 0.5em 0; /* Adds space before and after the label */
+}
+
+form input,
+form textarea,
+form button {
+  grid-column: 2; /* Form controls go in the second column */
+  box-sizing: border-box; /* Includes padding and borders in the width */
+  padding: 0.75em; /* Adds padding inside inputs */
+  margin-bottom: 1em; /* Adds space between controls */
+}
+
+form button {
+  grid-column: 1 / -1; /* Submit button spans across both columns */
+}
+
+/* Optional - Using Subgrid for more flexible labels (advanced) */
+form label {
+  display: grid; /* Use grid layout for labels */
+  grid-template-columns: subgrid; /* Make label use the parent's grid */
+  grid-column: 1 / -1; /* Make the label span both columns */
+}
+
+/* Step 4.2: Apply responsive grid */
+.projects {
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr)); /* Flexible grid columns */
+  gap: 1em; /* Spacing between grid items */
+}
+
+/* Step 4.3: Horizontal alignment with subgrid */
+.projects article {
+  display: grid;
+  grid-template-rows: subgrid; /* Inherit the row layout from parent grid */
+  grid-row: span 3; /* Each article spans 3 rows */
+}
+
+.projects h2 {
+  margin: 0; /* Remove extra margin from h2 */
+}
+
+/* Step 4.4: Improve Typography */
+h1 {
+  font-size: 400%; /* Make the <h1> much larger */
+  line-height: 1.1; /* Tighten line-height */
+}
+
+h2 {
+  font-size: 250%; /* Adjust <h2> size */
+  line-height: 1.1; /* Tighten line-height */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1; /* Set consistent line height for all headings */
+  text-wrap: balance; /* Better text wrapping */
+}
+
+.projects {
+  gap: 1em; /* Adds space between articles */
+}
