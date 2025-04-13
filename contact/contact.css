@@ -1,0 +1,43 @@
+/* Step 3.1: Typography inheritance for consistent fonts */
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+/* Step 3.2 & 3.3: Grid layout for form */
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+  max-width: 40em; /* Optional: for better line-length control */
+  margin: 2em auto;
+}
+
+/* Labels behave as subgrid containers */
+label {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1; /* Span full width */
+}
+
+/* Inputs and textarea take right column */
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  grid-column: 2;
+}
+
+/* Submit button spans full width */
+button {
+  grid-column: 1 / -1;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+/* Optional: basic styling for cleaner appearance */
+textarea {
+  resize: vertical;
+  min-height: 6em;
+}

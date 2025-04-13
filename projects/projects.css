@@ -1,0 +1,30 @@
+/* Step 4.2: Apply grid to .projects */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1em;
+    margin: 2em;
+  }
+  
+  /* Step 4.3: Subgrid layout for article content */
+  .projects article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+  }
+  
+  /* Step 4.3: Minor tweaks for cleaner layout */
+  .projects h2 {
+    margin: 0;
+  }
+  
+  /* Step 4.4: Heading hierarchy and defaults */
+  h1 {
+    font-size: 400%;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    text-wrap: balance;
+  }
+  
