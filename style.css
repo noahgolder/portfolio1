@@ -1,3 +1,33 @@
+html {
+  color-scheme: light dark;
+  background-color: canvas;
+  color: canvastext;
+}
+
+
+label.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
+}
+
+label.color-scheme select {
+  font-family: inherit;
+}
+
+
+nav {
+  --border-color: oklch(50% 10% 200 / 40%);
+  border-bottom: 1px solid var(--border-color);
+}
+
+nav a:hover {
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+}
+
+
 body {
   /* Set a comfortable line-height and UI-friendly font */
   font: 100%/1.5 system-ui;
@@ -48,7 +78,7 @@ nav a.current {
 }
 
 nav a:hover {
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
   border-bottom: 0.4em solid var(--color-accent);
 }
 
