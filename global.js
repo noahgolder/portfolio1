@@ -11,10 +11,10 @@ const BASE_PATH = (location.hostname === "localhost" || location.hostname === "1
 
 // === Pages for nav ===
 const pages = [
-  { url: '', title: 'Home' },
-  { url: 'projects/', title: 'Projects' },
+  { url: 'index.html', title: 'Home' },
+  { url: 'projects/index.html', title: 'Projects' },
   { url: 'resume.html', title: 'Resume' },
-  { url: 'contact/', title: 'Contact' },
+  { url: 'contact/index.html', title: 'Contact' },
   { url: 'https://github.com/noahgolder', title: 'GitHub' }, // external link
 ];
 
