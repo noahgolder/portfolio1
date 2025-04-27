@@ -82,3 +82,25 @@ nav a:hover {
   border-bottom: 0.4em solid var(--color-accent);
 }
 
+#profile-stats {
+  margin-top: 2rem;
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.github-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.github-grid dt {
+  font-weight: bold;
+}
+
+.github-grid dd {
+  margin: 0;
+}
+

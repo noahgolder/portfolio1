@@ -1,0 +1,75 @@
+[
+    {
+      "title": "JLab Market Analysis",
+      "year": "2024",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Analyzed market trends and consumer data to optimize pricing strategies using Python and machine learning."
+    },
+    {
+      "title": "RunBuggy Data Science for Transportation",
+      "year": "2023",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Built a data pipeline to predict transportation demand using machine learning and real-time traffic data."
+    },
+    {
+      "title": "Electrical Outages Analysis and Prediction",
+      "year": "2024",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Created a predictive model to forecast electrical outages and recommend preventive actions for utilities."
+    },
+    {
+      "title": "TikTok Dance Tutor",
+      "year": "2023",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Developed an AI-based system to analyze TikTok dance videos and generate step-by-step tutorials for users."
+    },
+    {
+      "title": "Real-Time Sports Analytics Dashboard",
+      "year": "2023",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Built an interactive dashboard to display real-time sports statistics and player performance analytics using D3.js."
+    },
+    {
+      "title": "Predictive Text Generation with NLP",
+      "year": "2022",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Developed a machine learning model using NLP techniques to predict and generate text in a conversation."
+    },
+    {
+      "title": "Facial Recognition System for Security",
+      "year": "2023",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Implemented a facial recognition system for securing physical locations, using OpenCV and deep learning."
+    },
+    {
+      "title": "Stock Price Predictor Using LSTM",
+      "year": "2022",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Built an LSTM-based model to predict future stock prices based on historical data and market trends."
+    },
+    {
+      "title": "Personalized Movie Recommender",
+      "year": "2024",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Created a personalized movie recommendation system using collaborative filtering and user preferences."
+    },
+    {
+      "title": "Smart Home Automation System",
+      "year": "2022",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Developed an IoT-based smart home system with automated lighting, security, and appliance control."
+    },
+    {
+      "title": "Interactive Language Learning App",
+      "year": "2024",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Created an interactive mobile app for language learning with speech recognition and real-time feedback."
+    },
+    {
+      "title": "E-commerce Product Recommender System",
+      "year": "2023",
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Built a recommendation system for an e-commerce website, personalizing product suggestions based on user browsing behavior."
+    }
+  ]
+  
