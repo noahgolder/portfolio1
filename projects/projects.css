@@ -1,30 +1,129 @@
 /* Step 4.2: Apply grid to .projects */
+
+
 .projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-    gap: 1em;
-    margin: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+  margin: 2em;
+}
+
+/* Step 4.3: Subgrid layout for article content */
+.projects article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+
+/* Step 4.3: Minor tweaks for cleaner layout */
+.projects h2 {
+  margin: 0;
+}
+
+/* Step 4.4: Heading hierarchy and defaults */
+h1 {
+  font-size: 400%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.projects-chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-block: 2em;
+  align-items: center;
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1em;
+  flex: 1;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.legend-item .swatch {
+  width: 1em;
+  height: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 50%; /* ✅ This makes it a perfect circle */
+  display: inline-block;
+}
+
+path {
+  transition: opacity 300ms ease;
+}
+
+path:hover {
+  opacity: 1;
+}
+
+svg {
+  display: block;
+}
+
+svg path:not(:hover) {
+  opacity: 0.5;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+
+  &:is(path) {
+    fill: var(--color);
   }
-  
-  /* Step 4.3: Subgrid layout for article content */
-  .projects article {
-    display: grid;
-    grid-template-rows: subgrid;
-    grid-row: span 3;
-  }
-  
-  /* Step 4.3: Minor tweaks for cleaner layout */
-  .projects h2 {
-    margin: 0;
-  }
-  
-  /* Step 4.4: Heading hierarchy and defaults */
-  h1 {
-    font-size: 400%;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    line-height: 1.1;
-    text-wrap: balance;
-  }
-  
+}
+
+
+
+path.selected {
+  cursor: pointer;
+  opacity: 1; /* Fully visible */
+
+}
+
+/* Style for search bar */
+.searchBar {
+  padding: 0.5em 1em;
+  width: 100%;
+  max-width: 25em; /* Adjust the max-width if needed */
+  margin: 1em 0;
+  border: 1px solid #ccc;
+  border-radius: 0.25em;
+  font-size: 1em;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.searchBar:focus {
+  border-color: var(--highlight-color, #FF8C00);
+  box-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+}
+
+/* Optional: Style the container around the search bar */
+.searchBar-container {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
