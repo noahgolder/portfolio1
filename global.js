@@ -16,7 +16,7 @@ const pages = [
   { url: 'resume.html', title: 'Resume' },
   { url: 'contact/index.html', title: 'Contact' },
   { url: 'meta/index.html', title: 'Meta' },
-  { url: 'https://github.com/noahgolder', title: 'GitHub' }, // external link
+  { url: 'https://github.com/noahgolder', title: 'GitHub' } // external link
 ];
 
 // === Create and add nav ===
