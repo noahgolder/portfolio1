@@ -6,34 +6,60 @@
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <h1>Meta</h1>
-  A short description of github stats.
+  <nav>
+    <a href="../">Home</a>
+    <a href="../projects/">Projects</a>
+    <a href="../contact/">Contact</a>
+    <a href="../meta/" class="current">Meta</a>
+    <a href="https://github.com/noahgolder/portfolio1">GitHub</a>
+  </nav>
 
-  <div id="stats"></div>
-  <h2>Commits by time of day</h2>
-  <div id="chart"></div>
+  <h1>Meta</h1>
+  <p>A short description of github stats.</p>
+
+  <div style="display: flex; align-items: center; margin: 2rem 0;">
+    <label>
+      Show commits until:
+      <input type="range" id="commit-progress" min="0" max="100" value="100">
+      <time id="commit-time"></time>
+    </label>
+  </div>
+
+  <div id="stats">
+    <h2>Summary</h2>
+  </div>
+
+  <div id="scrolly-1">
+    <div id="scatter-story"></div>
+    <div id="scatter-plot">
+      <h2>Commits by time of day</h2>
+      <div id="chart"></div>
+      <p id="selection-count">No commits selected</p>
+      <dl id="language-breakdown" class="stats"></dl>
+    </div>
+  </div>
+
+  <h2>Codebase Evolution</h2>
+  <div id="scrolly-2">
+    <div id="files-plot">
+      <dl id="files"></dl>
+    </div>
+    <div id="files-story"></div>
+  </div>
 
   <!-- Tooltip element -->
   <dl id="commit-tooltip" class="info tooltip" hidden>
     <dt>Commit</dt>
     <dd><a href="" id="commit-link" target="_blank"></a></dd>
-
     <dt>Date</dt>
     <dd id="commit-date"></dd>
-
     <dt>Time</dt>
     <dd id="commit-time"></dd>
-
     <dt>Author</dt>
     <dd id="commit-author"></dd>
-
     <dt>Lines edited</dt>
     <dd id="commit-lines"></dd>
   </dl>
-
-  <p id="selection-count">No commits selected</p>
-
-  <dl id="language-breakdown" class="stats"></dl>
 
   <script type="module" src="main.js"></script>
 </body>
